@@ -1,0 +1,21 @@
+ - [ ] POST vs. GET
+ - [ ] What is JSON?
+ - [x] Diff `==` vs `===`
+ - [ ] **??** `Null` vs `Undefined`, when used which?
+ - [x] `var` vs `let` vs `const` 
+ - [ ] **??** What is NPM?
+ - [ ] **??** Git?
+ - [ ] **??** Explaining *box model*
+ - [x] Primitive values in JS (4 of 7)
+ - [ ] When would you use `clear: both`
+ - [x] What is *Bootstrap*?
+ - [ ] What is a callback in a JS function?
+ - [x] What is a `tag` and what is an `attribute` in HTML?
+ - [ ] What does *specificity* mean in CSS?
+ - [x] Why should avoid using `!important!` in CSS?
+ - [ ] **??** What is a merge conflict?
+ - [ ] What are the *metatags*?
+ - [ ] **??** What does *scope* means in JS?
+ - [ ] Diff between `span` and `div`
+ - [ ] What does *MVC* stand for?
+ - [ ] What does *CMS* means?
