@@ -20,7 +20,7 @@ navBtn.addEventListener("click", function () {
 });
 
 getGuestRequest();
-// postGuestRequest();
+postGuestRequest();
 
 // console.log(new Date().toISOString());
 
