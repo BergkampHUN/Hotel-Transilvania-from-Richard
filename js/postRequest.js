@@ -1,3 +1,5 @@
+import { getGuestRequest } from './getRequest.js';
+
 const form = document.getElementById("form");
 
 const firstPage = document.querySelector(".first-page");
@@ -22,10 +24,12 @@ export const postGuestRequest = function () {
       body: JSON.stringify(outgoingData),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        getGuestRequest();
+        firstPage.classList.remove("hidden");
+        secondPage.classList.add("hidden");
+      })
       .catch((err) => console.log(err));
 
-    firstPage.classList.remove("hidden");
-    secondPage.classList.add("hidden");
   });
 };

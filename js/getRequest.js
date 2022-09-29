@@ -1,7 +1,9 @@
-import { makeGuestCard } from "./guestCard.js";
+import { makeGuestCard, clearGuestCards } from "./guestCard.js";
 import { renderError } from "./app.js";
 
 const renderGuestsCards = function (data) {
+  clearGuestCards();
+
   for (let i = 0; i < data.length; i++) {
     makeGuestCard(
       data[i].name,

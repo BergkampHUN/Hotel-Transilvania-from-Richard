@@ -73,3 +73,8 @@ export const makeGuestCard = function (
   roomWrapper.appendChild(roomSpan);
   roomWrapper.appendChild(room);
 };
+
+export const clearGuestCards = function() {
+  const guestCardWrapper = document.querySelector('.guest-card-wrapper');
+  guestCardWrapper.innerHTML = '';
+}
