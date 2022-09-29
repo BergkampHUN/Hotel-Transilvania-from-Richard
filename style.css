@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-height: 100vh;
+  margin: 40px;
+  /*In figma file background color is #F5F5F5 but i think that is not right because can't see difference between page background and placeholder background */
+  background-color: #fff;
+}
+
+h1 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 96px;
+  color: #131313;
+}
+
+.h1-second-part {
+  color: #b8b8b8;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  height: 52px;
+  width: 144px;
+  border-radius: 15px;
+  background-color: #66df9c;
+  color: #fff;
+  border: none;
+  box-shadow: 4px 8px 24px rgba(252, 210, 64, 0.2);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.form-btn {
+  align-self: flex-end;
+  margin-top: 29px;
+}
+
+.plus {
+  height: 24px;
+  width: 24px;
+  border-radius: 25px;
+  font-size: 28px;
+  background-color: #fff;
+  color: #66df9c;
+}
+
+.guest-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+}
+
+.guest-card {
+  display: flex;
+  width: 327px;
+  height: 84px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.04);
+  color: #131313;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+  padding: 21px 16px;
+  justify-content: space-between;
+}
+
+.guest-card span {
+  color: #0f9565;
+}
+
+/*Realised too late that circle not flexible, talk about it*/
+.monogram {
+  height: 48px;
+  width: 48px;
+  background-color: #9cf4ba;
+  border-radius: 50%;
+  font-weight: bolder;
+  color: #000000;
+}
+
+.flex-name-date {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 4px;
+}
+
+.name {
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.room {
+  font-size: 14px;
+}
+
+.form-units-flexbox {
+  width: 279px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.placeholder {
+  font-size: 12px;
+  width: 279px;
+  height: 56px;
+  padding-left: 24px;
+  background-color: #f3f4f7;
+  color: #717171;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Helper classes */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.room-wrapper {
+  align-items: flex-start;
+  gap: 0;
+}
+
+.center {
+  align-self: center;
+}

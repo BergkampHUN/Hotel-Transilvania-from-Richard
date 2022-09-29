@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Hotel Transilvania</title>
+  </head>
+  <body>
+    <div class="first-page" id="valami">
+      <h1 class="headline">
+        Hotel Transilvania <br />
+        <span class="h1-second-part">Guest List</span>
+      </h1>
+
+      <button class="flex btn navigation-btn">
+        <div class="plus center flex">+</div>
+        Add Guest
+      </button>
+    </div>
+    <div class="second-page hidden">
+      <h1 class="headline">Add guest</h1>
+      <form
+        action="https://crudcrud.com/api/30cadcd49db84d1bbcc047a3bfa9527c"
+        method="POST"
+        class="form-units-flexbox"
+        id="form"
+      >
+        <div class="form-units-flexbox">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name"
+            class="placeholder"
+            required
+          />
+        </div>
+        <div class="form-units-flexbox">
+          <label for="room-number">Room number</label>
+          <input
+            id="room-number"
+            name="room-number"
+            type="number"
+            placeholder="Room number"
+            class="placeholder"
+            min="1"
+            max="333"
+            required
+          />
+        </div>
+        <div class="form-units-flexbox">
+          <label for="start-date">Start date</label>
+          <input
+            id="start-date"
+            name="start-date"
+            placeholder="YYYY.MM.DD"
+            class="placeholder"
+            min="required"
+            pattern="(?:19|20)[0-9]{2}.(?:(?:0[1-9]|1[0-2]).(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2]).(?:30))|(?:(?:0[13578]|1[02])-31))"
+          />
+        </div>
+        <div class="form-units-flexbox">
+          <label for="end-date">End date</label>
+          <input
+            id="end-date"
+            name="end-date"
+            placeholder="YYYY.MM.DD"
+            class="placeholder"
+            required
+            pattern="(?:19|20)[0-9]{2}.(?:(?:0[1-9]|1[0-2]).(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2]).(?:30))|(?:(?:0[13578]|1[02])-31))"
+          />
+        </div>
+        <button type="submit" class="flex btn form-btn">
+          <div class="plus center flex">+</div>
+          Add Guest
+        </button>
+      </form>
+    </div>
+
+    <!-- <div class="guest-card">
+      <div class="flex wrapper-in-card">
+        <div class="monogram flex">AT</div>
+        <div class="flex-name-date">
+          <div class="name">Akos Tothmarton</div>
+          <div>2022.04.12-2022.04.21</div>
+        </div>
+      </div>
+      <div class="room-wrapper no-gap">
+        <div class="room"><span>Room:</span>10</div>
+      </div>
+    </div> -->
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
