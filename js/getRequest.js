@@ -9,7 +9,8 @@ const renderGuestsCards = function (data) {
       data[i].name,
       data[i].room_number,
       data[i].start_date,
-      data[i].end_date
+      data[i].end_date,
+      data[i]._id
     );
   }
 };

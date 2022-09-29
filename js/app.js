@@ -20,22 +20,27 @@ navBtn.addEventListener("click", function () {
 });
 
 getGuestRequest();
-postGuestRequest();
+// postGuestRequest();
 
 // console.log(new Date().toISOString());
 
 // just for testing purpose
-const deleteGuestRequest = function () {
+export const deleteGuestRequest = function (id) {
+  console.log(id)
   fetch(
-    `https://crudcrud.com/api/31fcb17b05204056970f818a1b7dd437/guests/63358d8b06e25f03e8c52a68`,
+    `https://crudcrud.com/api/31fcb17b05204056970f818a1b7dd437/guests/${id}`,
     {
       method: "DELETE",
     }
   )
-    .then((response) => response.json())
-    .then((data) => renderGuestsCards(data))
+    .then((response) => response.text())
+    .then((data) => {
+      console.log(data);
+      getGuestRequest();
+    })
     .catch((err) => {
       console.error(err);
+      renderError(`Something went wrong! Can't delete the guest!`);
     });
 };
 

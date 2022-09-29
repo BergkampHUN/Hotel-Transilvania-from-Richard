@@ -1,5 +1,7 @@
 "use strict";
 
+import { deleteGuestRequest } from './app.js'
+
 const firstPage = document.querySelector(".first-page");
 
 //Make the container for the cards
@@ -13,7 +15,8 @@ export const makeGuestCard = function (
   fullName,
   roomNumber,
   startDate,
-  endDate
+  endDate,
+  id
 ) {
   //Creating elelements
 
@@ -72,6 +75,11 @@ export const makeGuestCard = function (
   guestCard.appendChild(roomWrapper);
   roomWrapper.appendChild(roomSpan);
   roomWrapper.appendChild(room);
+
+
+  guestCard.addEventListener('click', function() {
+    deleteGuestRequest(id);
+  })
 };
 
 export const clearGuestCards = function() {
