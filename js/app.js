@@ -26,7 +26,6 @@ postGuestRequest();
 
 // just for testing purpose
 export const deleteGuestRequest = function (id) {
-  console.log(id)
   fetch(
     `https://crudcrud.com/api/31fcb17b05204056970f818a1b7dd437/guests/${id}`,
     {
@@ -35,7 +34,6 @@ export const deleteGuestRequest = function (id) {
   )
     .then((response) => response.text())
     .then((data) => {
-      console.log(data);
       getGuestRequest();
     })
     .catch((err) => {

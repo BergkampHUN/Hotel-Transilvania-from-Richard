@@ -78,7 +78,9 @@ export const makeGuestCard = function (
 
 
   guestCard.addEventListener('click', function() {
-    deleteGuestRequest(id);
+    if (window.confirm("Do you really want to delete the guest?")) {
+      deleteGuestRequest(id);
+    }
   })
 };
 
